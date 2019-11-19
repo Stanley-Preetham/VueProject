@@ -1,10 +1,15 @@
 import Vue from 'vue'
-import DisplayNumber from './components/display-number.vue'
-
+import App from './App.vue'
+import router from './router'
 
 
 new Vue({
   el: '#app',
-  components:{DisplayNumber},
-  template: '<DisplayNumber :number="4"></DisplayNumber>'
-})
+  router,
+  template:"<App/>",
+  components: 
+  {
+    App
+  }
+});
+
